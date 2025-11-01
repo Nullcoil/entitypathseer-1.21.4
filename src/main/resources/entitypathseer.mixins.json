@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "net.nullcoil.entitypathseer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MoveControlMixin"
+  ],
+  "priority": 2000,
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "EntityRenderDispatcherMixin"
+  ]
+}
