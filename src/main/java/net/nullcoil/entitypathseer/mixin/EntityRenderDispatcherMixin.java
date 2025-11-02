@@ -24,8 +24,6 @@ public class EntityRenderDispatcherMixin {
         if (entity instanceof MobEntity mob) {
             BlockPos targetPos = TargetPositionStorage.getTargetPos(mob);
 
-            System.out.println("[EntityPathSeer] RENDER - Entity: " + mob.getPos() + " Target: " + targetPos);
-
             if (!targetPos.equals(BlockPos.ORIGIN)) {
                 double vecX = targetPos.getX() - entity.getX();
                 double vecY = targetPos.getY() - entity.getY();
