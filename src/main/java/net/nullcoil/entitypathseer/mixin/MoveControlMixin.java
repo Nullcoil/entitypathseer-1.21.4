@@ -13,17 +13,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(MoveControl.class)
 public abstract class MoveControlMixin {
 
-    @Shadow
-    protected MobEntity entity;
-
-    @Shadow
-    public abstract double getTargetX();
-
-    @Shadow
-    public abstract double getTargetY();
-
-    @Shadow
-    public abstract double getTargetZ();
+    @Shadow protected MobEntity entity;
+    @Shadow public abstract double getTargetX();
+    @Shadow public abstract double getTargetY();
+    @Shadow public abstract double getTargetZ();
 
     private BlockPos lastSyncedTarget = BlockPos.ORIGIN;
 
